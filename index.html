@@ -1,163 +1,103 @@
-@charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>김민석의 이력서</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="shortcut icon" href="./img/kim.jpg" type="image/x-icon"/>
+</head>
+<body  oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydown="return false">
+    <div class="wrapper">
+        <section id="my_info">
+            <h2>My info</h2> 
+            <img src = "./img/kim.jpg"  alt="김민석의 프로필 사진" />
+            <table>
+                <tbody>
+                    <tr id="myname">
+                        <th>이름</th>
+                        <td>김민석</td>
+                    </tr>
+                    <tr>
+                        <th>직업</th>
+                        <td>대학생</td>
+                    </tr>
+                    <tr>
+                        <th>나이</th>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <th>거주지</th>
+                        <td>울산</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+            
+        <section id="about">
+            <h2>Introduce</h2>
+            <p> Hello. <br>
+                My name is Minseok Kim.<br>
+                My job is a developer, and I'm working hard to become a better developer.<br>
+                We will do our best to become a developer who constantly strives, not a developer who stays in the present.<br>
+                Finally, thank you for visiting my portfolio.
+            </p>   
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li>
+                    <a href="tel:0100000000">010-3420-5169</a>
+                </li>
+                <li>
+                    <a href="mailto:zcrazymanx17@naver.com" target="_blank">zcrazymanx17@naver.com</a>
+                </li>
+            </ul>  
+        </section>
 
-body {
-    background-color: #f5f5f5;
-    color: #2f2f2f;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 16px;
-    background-color :#2f2f2f;
-}
-
-section {
-    background-color: white;
-    border-radius: 10px;
-    padding: 40px;
-    margin-bottom: 10px;
-}
-
-.wrapper {
-    width: 85%;
-    margin: 20px auto;
-}
-
-h1 {
-    display: none;
-}
-
-h2, h3 {
-    font-family: sans-serif;
-}
-
-h2 {
-    margin: 0 0 20px 0;
-    text-transform: uppercase;
-    font-size: 18px;
-}
-
-#my_info h2 {
-    display: none;
-}
-
-#my_info img {
-    width: 100px;
-    height: auto;
-    border-radius: 50px;
-    margin-right: 40px;
-} 
-
-table {
-    display: inline-block;
-    border-collapse: collapse;
-    border-spacing: 0;
-    vertical-align: top;
-}
-
-th {
-    text-align: left;
-    padding-right: 20px;
-}
-
-th, td {
-    font-size: 12px;
-}
-
-#myname th {
-    display: none;
-}
-
-#myname td {
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: gold;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 4px;
-}
-
-ul li::before {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-ul li:nth-child(1)::before {
-    content: url('../images/ico_mobile.png');
-}
-ul li:nth-child(2)::before {
-    content: url('../images/ico_email.png');
-}
-ul li:nth-child(3)::before {
-    content: url('../images/ico_facebook.png');
-}
-ul li:nth-child(4)::before {
-    content: url('../images/ico_blog.png');
-}
-
-#skill ol {
-    list-style: none;
-    padding: 0;
-}
-
-#skill li {
-    display: inline-block;
-    background-color: gold;
-    padding: 4px 10px;
-    border-radius: 32px;
-    margin: 0 8px 8px 0;
-}
-
-#skill li::before {
-    content: "#";
-}
-
-#project ol {
-    list-style: none;
-    padding: 0;
-}
-
-#project li {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
-}
-
-#project li:last-child {
-    border-bottom: none;
-}
-
-#project video {
-    width: 100%;
-}
-
-#project a {
-    color: gold;
-    display: inline-block;
-    border-radius: 4px;
-    padding: 2px 8px 2px 0;
-}
-
-#project a:hover {
-    background-color: #2f2f2f;
-    text-decoration: none;
-    padding: 2px 8px;
-    transition: padding 0.2s;
-}
+        <section id="mypage">
+            <h2>My Page</h2>
+            <ul>
+                <img src="./img/ico_github.png" width="20" height="20">
+                    <a href="https://github.com/gutil7869?tab=repositories" target="_blank">Github</a>
+                    <br>
+                <img src="./img/ico_naverblog.png" width="20" height="20">
+                    <a href="https://blog.naver.com/zcrazymanx17" target="_blank">Blog</a>
+            </ul>  
+        </section>
+        
+        <section id="skill">
+            <h2>Skills</h2>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>php</li>
+            </ol>
+        </section>
+        
+        <section id="project">
+            <h2>Projects</h2>
+            <ol>
+                <li>
+                    <h3>더 재밌는 앱</h3>
+                    <br>
+                    <center>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZR1nlrpekd0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Bz28y2OSCdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </center>
+                </li>
+                <li>
+                    <br>
+                    <h3>더 재밌는 사이트</h3>
+                    <br>
+                    <center>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PGLP11AP1z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </center>
+                </li>
+            </ol>    
+        </section>
+    </div>
+</body>
+</html>
